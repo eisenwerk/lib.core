@@ -7,7 +7,7 @@ module.exports = {
                 exclude: /node_modules/,
                 options: {
                     presets: [
-                        // 'react', // translate jsx
+                        'react', // translate jsx
                         'stage-0', // async code
                         ['env', {
                             targets: {
@@ -21,6 +21,7 @@ module.exports = {
     },
 
     externals : {
-        // underscore: '_',
+        'underscore-mixin': '_',
+        'url-parse': 'URLParse',
     }
 };
